@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anniversary</title>
+<style>
+body{
+background:red;
+color:white;
+font-family:Arial;
+text-align:center;
+padding-top:100px;
+}
+
+button{
+padding:15px 30px;
+font-size:20px;
+border:none;
+border-radius:10px;
+margin:10px;
+}
+
+#noBtn{
+position:absolute;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Will you be my first anniversary date? ❤️</h1>
+
+<button onclick="location.href='apology.html'">YES 💖</button>
+<button id="noBtn">NO 😢</button>
+
+<script>
+const noBtn = document.getElementById("noBtn");
+noBtn.onmouseover = () => {
+  noBtn.style.left = Math.random()*80 + "%";
+  noBtn.style.top = Math.random()*80 + "%";
+};
+</script>
+
+</body>
+</html>
