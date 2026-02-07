@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Apology</title>
+<style>
+body{
+background:#fdf6e3;
+font-family:'Comic Sans MS',cursive;
+padding:20px;
+}
+
+.page{
+background:white;
+padding:20px;
+border:2px solid #ccc;
+max-width:600px;
+margin:auto;
+font-size:22px;
+line-height:1.6;
+box-shadow:5px 5px 10px rgba(0,0,0,0.2);
+}
+
+button{
+padding:10px 20px;
+font-size:18px;
+margin:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="page" id="p1">
+Dear baby ❤️,<br><br>
+I’m really sorry I can’t be with you on our first anniversary.  
+Distance hurts, but loving you is the easiest thing in my life.
+</div>
+
+<div class="page" id="p2" style="display:none;">
+Sometimes I act dumb, sometimes I get busy,  
+but you are always in my heart.  
+I miss you every single day.
+</div>
+
+<div class="page" id="p3" style="display:none;">
+You are my peace, my home, my future.  
+Distance is temporary, but my love is permanent.
+</div>
+
+<div class="page" id="p4" style="display:none;">
+Happy First Anniversary ❤️  
+I promise I will make you the happiest girl forever.  
+Forever means us ♾️
+</div>
+
+<div style="text-align:center;">
+<button onclick="nextPage()">Next ➡️</button>
+<button onclick="location.href='photos.html'">Go to Photos 📸</button>
+</div>
+
+<script>
+let page=1;
+function nextPage(){
+document.getElementById("p"+page).style.display="none";
+page++;
+if(page<=4){
+document.getElementById("p"+page).style.display="block";
+}
+}
+</script>
+
+</body>
+</html>
